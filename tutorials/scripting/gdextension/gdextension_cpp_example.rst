@@ -708,7 +708,9 @@ with code like this:
 
     #include <godot_cpp/classes/engine.hpp>
     ...
-    godot::Engine::get_singleton()->is_editor_hint()
+        if (godot::Engine::get_singleton()->is_editor_hint()) {
+            // This code is run only in the editor.
+        }
 
 
 If you ever find yourself trying to access a type via GDExtension and are uncertain of the exact
