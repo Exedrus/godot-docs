@@ -702,7 +702,7 @@ behavior you may want to familiarize yourself with the ins and outs of :ref:`too
 appear in the editor UI and can be saved by the user.
 
 If you'd rather have the code only run in game, you can detect when the editor runs your code
-with code like this:
+like this:
 
 .. code-block:: cpp
 
