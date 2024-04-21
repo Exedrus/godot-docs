@@ -696,11 +696,10 @@ Other useful tips
 -----------------
 
 By default GDExtension code is run in the editor (as the above demonstrates). If this is desired
-behavior you may want to familiarize yourself with the ins and outs of `tool scripts <https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html>`__
+behavior you may want to familiarize yourself with the ins and outs of :ref:`tool scripts <doc_running_code_in_the_editor>`
 (Godot's way of describing user scripts run in editor). In particular, the
-`Instancing Scenes section <https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__
-describes how to insure that nodes created via GDExtension code appears in the editor UI and can
-be saved by the user.
+"Instancing Scenes" section describes how to insure that nodes created via GDExtension code
+appears in the editor UI and can be saved by the user.
 
 If you'd rather have the code only run in game, you can detect when the editor runs your code
 with code like this:
