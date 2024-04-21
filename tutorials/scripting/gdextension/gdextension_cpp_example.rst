@@ -696,7 +696,7 @@ Other useful tips
 -----------------
 
 By default GDExtension code is run in the editor (as the above demonstrates). If this is desired
-behavior you may want to familiarize yourself with the ins and outs of ` ``@tool`` scripts <https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html>`__
+behavior you may want to familiarize yourself with the ins and outs of `tool scripts <https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html>`__
 (Godot's way of describing user scripts run in editor). In particular, the
 `Instancing Scenes section <https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__
 describes how to insure that nodes created via GDExtension code appears in the editor UI and can
@@ -706,9 +706,11 @@ If you'd rather have the code only run in game, you can detect when the editor r
 with code like this:
 
 .. code-block:: cpp
+
     #include <godot_cpp/classes/engine.hpp>
     ...
     godot::Engine::get_singleton()->is_editor_hint()
+
 
 If you ever find yourself trying to access a type via GDExtension and are uncertain of the exact
 typing, you can always look in the ``godot-cpp/include/godot_cpp/`` or the
